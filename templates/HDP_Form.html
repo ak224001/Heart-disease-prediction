@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Full-width input fields */
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    /* Set a style for all buttons */
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    button:hover {
+      opacity: 1;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn,
+    .signupbtn {
+      float: left;
+      width: 50%;
+    }
+
+    /* Add padding to container elements */
+    .container {
+      padding: 16px;
+    }
+
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+      .cancelbtn,
+      .signupbtn {
+        width: 100%;
+      }
+    }
+    img {
+      width: 10%;
+      height: 10%;
+    }
+  </style>
+
+  <body>
+    <form
+      action="{{ url_for('predict')}}"
+      style="border:1px solid #ccc"
+      method="post"
+    >
+      <div class="container">
+        <h1>
+          <img src="../static/predict-heart-disease.jpg" alt="heart Image" />
+          Diagnosis of heart disease
+        </h1>
+
+        <h5>
+          Please fill to Check whether you are suffering from heart disease or
+          not
+        </h5>
+        <hr />
+
+        <label for="Age"><b>Age</b></label>
+        <input type="text" placeholder="Enter Age" name="age" required />
+
+        <label for="Sex"><b>SEX</b></label>
+        <div>
+          <label class="radio-inline">
+            <input type="radio" name="Sex" id="Male" value="1" checked />Male
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="Sex" id="Female" value="0" />Female
+          </label>
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="sel1">Chest-pain Type:</label>
+          <select class="form-control" id="sel1" name="chest-pain type">
+            <option name="select" id="Typical angina" value="0"
+              >Typical angina</option
+            >
+            <option name="select" id="Atypical angina" value="1" selected
+              >Atypical angina</option
+            >
+            <option name="select" id="Non-anginal pain" value="2"
+              >Non-anginal pain</option
+            >
+            <option name="select" id="Asymptotic" value="3">Asymptotic</option>
+          </select>
+        </div>
+
+        <label for="trestbps"><b>Resting Blood Pressure:</b></label>
+        <input
+          type="text"
+          placeholder="Enter Resting Blood Pressure in mmHg (unit)(94–200)"
+          name="trestbps"
+          required
+        />
+        <label for="chol"><b>Serum Cholestrol:</b></label>
+        <input
+          type="text"
+          placeholder="Enter Serum Cholestrol in mg/dl (unit)(126–564)"
+          name="chol"
+          required
+        />
+
+        <label for="fbs"><b>Fasting Blood Sugar:</b></label>
+        <div>
+          <label class="radio-inline">
+            <input
+              type="radio"
+              name="fbs"
+              id="fbshigh"
+              value="1"
+              checked
+            />fasting blood sugar > 120mg/dl
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="fbs" id="fbsless" value="0" />fasting
+            blood sugar < 120mg/dl
+          </label>
+        </div>
+        <br />
+        <!-- <input
+          type="text"
+          placeholder="Enter Fasting Blood Sugar in mg/dl(unit)(94–200)"
+          name="fbs"
+          required
+        /> -->
+
+        <label for="ECG"><b>Resting ECG:</b></label>
+        <div>
+          <label class="radio-inline">
+            <input
+              type="radio"
+              name="ECG"
+              id="normal"
+              value="0"
+              checked
+            />normal
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="ECG" id="abnormality" value="1" />having
+            ST-T wave abnormality
+          </label>
+          <label class="radio-inline">
+            <input
+              type="radio"
+              name="ECG"
+              id="left ventricular hyperthrophy"
+              value="2"
+            />left ventricular hyperthrophy
+          </label>
+        </div>
+        <br />
+        <!-- <input
+          type="text"
+          placeholder="Enter Resting ECG in mg/dl(unit)"
+          name="ECG"
+          required
+        /> -->
+        <label for="thalach"><b>Max heart rate achieved</b></label>
+        <input
+          type="text"
+          placeholder="Enter Max heart rate achieved(71-202)"
+          name="thalach"
+          required
+        />
+        <label for="exang"><b>Exercise induced angina:</b></label>
+        <div>
+          <label class="radio-inline">
+            <input
+              type="radio"
+              name="Exercise induced angina"
+              id="Yes"
+              value="1"
+              checked
+            />Yes
+          </label>
+          <label class="radio-inline">
+            <input
+              type="radio"
+              name="Exercise induced angina"
+              id="No"
+              value="0"
+            />No
+          </label>
+        </div>
+        <br />
+        <label for="oldpeak"
+          ><b>ST depression induced by exercise relative to rest</b></label
+        >
+        <input
+          type="text"
+          placeholder="Enter Fasting Blood Sugar in mg/dl(unit)(0–6.2)"
+          name="oldpeak"
+          required
+        />
+
+        <label for="slope"><b>Slope of the peak exercise ST segment</b></label>
+        <div>
+          <label class="radio-inline">
+            <input
+              type="radio"
+              name="slope"
+              id="upsloping"
+              value="0"
+              checked
+            />upsloping
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="slope" id="flat" value="1" />flat
+          </label>
+          <label class="radio-inline">
+            <input
+              type="radio"
+              name="slope"
+              id="downsloping"
+              value="2"
+            />downsloping
+          </label>
+        </div>
+        <br />
+        <label for="ca"
+          ><b>Number of major vessels (0–3) colored by flourosopy</b></label
+        >
+        <input
+          type="text"
+          placeholder="Enter Number of major vessels (0–3) colored by flourosopy(0, 1, 2, 3)"
+          name="ca"
+          required
+        />
+        <label for="thal"><b>Thalassemia</b></label>
+        <div>
+          <label class="radio-inline">
+            <input
+              type="radio"
+              name="thal"
+              id="normal"
+              value="1"
+              checked
+            />normal
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="thal" id="fixed defect" value="2" />fixed
+            defect
+          </label>
+          <label class="radio-inline">
+            <input
+              type="radio"
+              name="thal"
+              id="reversible defect"
+              value="3"
+            />reversible defect
+          </label>
+        </div>
+        <br />
+        <div class="classify">
+          <button type="submit" class="signupbtn">Check</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
