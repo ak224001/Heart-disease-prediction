@@ -96,6 +96,7 @@ Majorly, people belonging to the age group 50+ are suffering from the disease.
 <b>Random Forest Algorithm </b>
  Random Forest Algorithm Accuracy Score = 88.52%
 </br>
+<a href = "http://ec2-3-12-197-90.us-east-2.compute.amazonaws.com:8080/">Project link</a>
 <h4>REFERENCES </h4>
 [1] Sharma Purushottam, Dr. Kanak Saxena, Richa Sharma, “Heart Disease Prediction System Evaluation using C4.5 Rules and Partial Tree”, Springer, Computational Intelligence in Data Mining,vol.2, 2015, pp.285-294.</br>
 [2] Boshra Brahmi, Mirsaeid Hosseini Shirvani, “Prediction and Diagnosis of Heart Disease by Data Mining Techniques”, Journals of Multidisciplinary Engineering Science and Technology, vol.2, 2 February 2015, pp.164-168.</br>
