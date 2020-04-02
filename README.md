@@ -1,10 +1,16 @@
 # Heart-disease-prediction
 
-# Machine learning
+# Machine learning (Final Year Project)
+
 <p align="center">
   <img width="460" height="300" src="https://github.com/ak224001/Heart-disease-prediction/blob/master/static/predict-heart-disease.jpg">
 </p>
-### Introduction
+<h2>Acknowledgements </h2>
+I would like to express my Thanks and gratitude to **Dr. N. Renugadevi**, Assistant Professor,indian institute of information technology for giving me an opportunity and guiding me during this project, giving me the valuable time and inputs to complete my project. 
+</br>
+I express my deepest Thanks to **Abhinav singh, Himanshu yadav** (Classmates) project partner for helping me in completing the tasks performed in this period and helping me in completing this project.
+
+<h2>Introduction</h2>
 New technologies like Machine learning and Big data analytics have been proven to provide promising solutions to biomedical communities, healthcare problems, and patient care. They also help in early prediction of disease by accurate interpretation of medical data. At an initial stage the prediction of heart disease can save human lives.
 
 ### Dataset : <a href = "https://www.kaggle.com/ronitf/heart-disease-uci">Heart-disease-prediction dataset</a>
@@ -33,8 +39,8 @@ There are 15 columns in the dataset, however the first column name is not a good
 9.	<b>Exercise induced angina </b>: 
               1 = yes
               0 = no
-10.<b>	ST depression induced by exercise relative to rest </b>: displays the value which is integer or float.
-11.<b>	Peak exercise ST segment </b>: 
+10. <b>ST depression induced by exercise relative to rest </b>: displays the value which is integer or float.
+11. <b>Peak exercise ST segment </b>: 
               1 = upsloping
               2 = flat
               3 = downsloping
@@ -46,4 +52,4 @@ There are 15 columns in the dataset, however the first column name is not a good
 14.	<b>Diagnosis of heart disease </b>: Displays whether the individual is suffering from heart disease or not : 
               0 = absence
               1,2,3,4 = present.
-### Model
+### Data Analysis
