@@ -91,10 +91,10 @@ Majorly, people belonging to the age group 50+ are suffering from the disease.
  Accuracy for SVM for test set = 89.32%
 </br>
 <b>LogisticRegression</b>
- Test Accuracy 86.89%
+ LogisticRegression Test Accuracy = 86.89%
 </br>
 <b>Random Forest Algorithm </b>
- Random Forest Algorithm Accuracy Score : 88.52%
+ Random Forest Algorithm Accuracy Score = 88.52%
 </br>
 <h4>REFERENCES </h4>
 [1] Sharma Purushottam, Dr. Kanak Saxena, Richa Sharma, “Heart Disease Prediction System Evaluation using C4.5 Rules and Partial Tree”, Springer, Computational Intelligence in Data Mining,vol.2, 2015, pp.285-294.</br>
