@@ -5,7 +5,7 @@
 <p align="center">
   <img width="460" height="300" src="https://github.com/ak224001/Heart-disease-prediction/blob/master/static/predict-heart-disease.jpg">
 </p>
-<h3>Acknowledgements <h3>
+<h3>Acknowledgements</h3>
 I would like to express my Thanks and gratitude to Dr. N. Renugadevi, Assistant Professor,indian institute of information technology for giving me an opportunity and guiding me during this project, giving me the valuable time and inputs to complete my project. 
 </br>
 I express my deepest Thanks to Abhinav singh, Himanshu yadav (Classmates) project partner for helping me in completing the tasks performed in this period and helping me in completing this project.
