@@ -5,8 +5,8 @@
 <p align="center">
   <img width="460" height="300" src="https://github.com/ak224001/Heart-disease-prediction/blob/master/static/predict-heart-disease.jpg">
 </p>
-### Acknowledgements 
-I would like to express my Thanks and gratitude to **Dr. N. Renugadevi**, Assistant Professor,indian institute of information technology for giving me an opportunity and guiding me during this project, giving me the valuable time and inputs to complete my project. 
+<h3>Acknowledgements <h3>
+I would like to express my Thanks and gratitude to Dr. N. Renugadevi, Assistant Professor,indian institute of information technology for giving me an opportunity and guiding me during this project, giving me the valuable time and inputs to complete my project. 
 </br>
 I express my deepest Thanks to Abhinav singh, Himanshu yadav (Classmates) project partner for helping me in completing the tasks performed in this period and helping me in completing this project.
 
@@ -95,9 +95,8 @@ Majorly, people belonging to the age group 50+ are suffering from the disease.
 </br>
 <b>Random Forest Algorithm </b>
  Random Forest Algorithm Accuracy Score : 88.52%
-
 </br>
-<b>REFERENCES </b>
+<h4>REFERENCES </h4>
 </br>
 [1] Sharma Purushottam, Dr. Kanak Saxena, Richa Sharma, “Heart Disease Prediction System Evaluation using C4.5 Rules and Partial Tree”, Springer, Computational Intelligence in Data Mining,vol.2, 2015, pp.285-294.</br>
 [2] Boshra Brahmi, Mirsaeid Hosseini Shirvani, “Prediction and Diagnosis of Heart Disease by Data Mining Techniques”, Journals of Multidisciplinary Engineering Science and Technology, vol.2, 2 February 2015, pp.164-168.</br>
